@@ -1,0 +1,66 @@
+<%- include('templates/cabecera', {titulo: 'Contratar'}); %>
+
+<main class="container">
+
+    <h1 class="h1 text-center">CONTRATAR SERVICIOS Y REGISTRO</h1>
+
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Correo electronico</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputDireccion">Direccion</label>
+          <input type="text" class="form-control" id="inputDireccion" placeholder="Calle ...">
+        </div>
+        <div class="form-group">
+          <label for="inputCuenta">Cuenta Bancaria</label>
+          <input type="text" class="form-control" id="inputCuenta" placeholder="ES 8976 44 5555 7777">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">CIudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputProduct">Productos</label>
+            <select id="inputProduct" class="form-control">
+              <option selected>Selecciona un producto</option>
+              <option>Producto 1</option>
+              <option>Producto 2</option>
+              <option>Producto 3</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Codigo Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Politica de Privacidad
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Contratar</button>
+      </form>
+
+      <div class="card mb-3" style="margin: 2rem;">
+        <div class="card-body">
+          <h5 class="card-title">Politica de Privacidad</h5>
+          <p class="card-text">La Empresa CryptoBox SL te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web CryptoBox.com</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+</main>
+
+<%- include('templates/footer'); %>

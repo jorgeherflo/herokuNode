@@ -1,0 +1,61 @@
+
+<%- include('templates/cabecera', {titulo: 'Pagina principal'}); %>
+
+<main class="container" style="padding: 2rem;">
+
+
+    <!-- CONTENIDO TEXTO DEL SECTION  -->
+    <div class="jumbotron" style="display: flex; justify-content: center; flex-direction: column;">
+        <h1 class="display-4"><%= bienvenida %></h1>
+        <p class="lead" style="width: 80%;">
+            En esta pagina podras descubrir un mundo de oportunidades donde aprender y explorar lo que como empresa ofrecemos.
+            La filosofia de nuestra empresa es alcanzar los objetivos y escalar en el mercado, llegando a ser un referente en nuestro sector.
+            Contamos con tecnologia del mas alto nivel ademas de contar con expertos profesionales que, nos ayudan a afrontar cualquier problema.
+
+        </p>
+        <hr class="my-4">
+        <p></p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/contacto" role="button">Contacto</a>
+        </p>
+    </div>
+
+    <h1 class="h1 text-center">CONOCENOS UN POCO MAS A FONDO </h1>
+
+    <section class="row justify-content-between">
+        <!-- TARJETA 1  -->
+        <div class="card col-2 " style="width: 18rem;">
+            <img class="card-img-top" src="/img/servicios.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Creo honestamente que es mucho mejor fallar en algo que amas que tener éxito en algo que odias</p>
+            </div>
+          </div>
+
+        <!-- TARJETA 2  -->
+        <div class="card col-2 " style="width: 18rem;">
+            <img class="card-img-top" src="/img/contacto.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Los únicos límites son, como siempre, los de la visión</p>
+            </div>
+          </div>
+
+        <!-- TARJETA 3 -->
+        <div class="card col-2 " style="width: 18rem;">
+            <img class="card-img-top" src="/img/nosotros.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Un negocio que no hace nada más que dinero es un negocio pobre</p>
+            </div>
+          </div>
+
+        <!-- TARJETA 4 -->
+        <div class="card col-2 " style="width: 18rem;">
+            <img class="card-img-top" src="/img/personal.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Para tener éxito, tienes que tener tu corazón en tu negocio, y tu negocio en tu corazón</p>
+            </div>
+          </div>
+    </section>
+
+</main>
+
+<%- include('templates/footer'); %>

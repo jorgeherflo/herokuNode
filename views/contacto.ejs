@@ -1,0 +1,28 @@
+<%- include('templates/cabecera', {titulo: 'Contacto'}); %>
+
+<main class="container"> 
+
+    <h1 class="h1 text-center">CONTACTA CON NOSOTROS</h1>
+
+    <form  class="form-group" action="" method="post">
+
+        <label for="nombre">NOMBRE</label>
+        <input class="form-control" type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+        <label for="email">EMAIL</label>
+        <input class="form-control" type="email" id="email" placeholder="Ingresa tu correo electronico">
+        <small id="email" class="form-text text-muted">Nunca compartiremos tu correo con nadie</small>
+
+        <label for="asunto">ASUNTO</label>
+        <input class="form-control" type="text" id="asunto"  placeholder="Ingresa el asunto">
+
+        <label for="mensaje">MENSAJE</label>
+        <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10"  placeholder="Escribe tu consulta..."></textarea>
+
+        <button type="submit" class="btn btn-primary" style="margin: 1rem;">Submit</button>
+
+    </form>
+
+</main>
+
+<%- include('templates/footer'); %>
