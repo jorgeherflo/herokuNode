@@ -7,10 +7,10 @@ const express = require('express');
 var envJSON = require('../config/env.entornos.json');
 
 //Puerto por defecto para el Servdiror.
-// const port = 3000;
+const port = 3000;
 
 //Entorno de desarrollo.
-var port = envJSON['desarrollo'].PORT;
+// var port = envJSON['desarrollo'].PORT;
 
 //Entorno de produccion.
 // var port = envJSON['produccion'].PORT;
